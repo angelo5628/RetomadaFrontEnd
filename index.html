@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Simples</title>
+    <title>Meu Site Aprimorado</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f2f2f2;
+            color: #333;
         }
 
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
         }
 
@@ -31,20 +32,43 @@
             text-decoration: none;
             padding: 10px;
             margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
         }
 
         section {
             padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         footer {
             background-color: #333;
             color: #fff;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+
+        .feature {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .feature-item {
+            text-align: center;
+            margin: 10px;
         }
     </style>
 </head>
@@ -52,22 +76,50 @@
 <body>
 
     <header>
-        <h1>Meu Site Simples</h1>
+        <h1>Meu Site Aprimorado</h1>
     </header>
 
     <nav>
         <a href="#">Página Inicial</a>
         <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
         <a href="#">Contato</a>
     </nav>
 
     <section>
-        <h2>Bem-vindo ao Meu Site Simples</h2>
-        <p>Este é um exemplo de um site simples com HTML e CSS incorporados.</p>
+        <h2>Bem-vindo ao Meu Site Aprimorado</h2>
+        <p>Explore os recursos incríveis que oferecemos para tornar sua experiência ainda melhor.</p>
+
+        <div class="feature">
+            <div class="feature-item">
+                <h3>Design Responsivo</h3>
+                <p>Nosso site se adapta a diferentes dispositivos para uma experiência consistente.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Estilos Aprimorados</h3>
+                <p>Estilos modernos e atraentes para tornar o site visualmente agradável.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Navegação Intuitiva</h3>
+                <p>Interface de usuário amigável para facilitar a navegação.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Nossos Serviços</h2>
+        <p>Descubra os serviços que oferecemos para atender às suas necessidades.</p>
+
+        <ul>
+            <li>Web Design</li>
+            <li>Desenvolvimento Web</li>
+            <li>Hospedagem</li>
+            <li>Consultoria em TI</li>
+        </ul>
     </section>
 
     <footer>
-        <p>&copy; 2024 Meu Site Simples. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Meu Site Aprimorado. Todos os direitos reservados.</p>
     </footer>
 
 </body>
